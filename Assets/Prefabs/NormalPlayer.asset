@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49203c49801fa7a4faf7ad1dcbb5d56b, type: 3}
+  m_Name: NormalPlayer
+  m_EditorClassIdentifier: 
+  name: 
+  points: 0
+  id: 1
+  isAI: 0
+  currentHumans: 0
+  currentChickens: 0
+  currentCows: 0
+  currentDeathRays: 0
+  currentTanks: 0

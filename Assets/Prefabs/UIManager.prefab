@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1834886410602800366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6437789282822667553}
+  - component: {fileID: 4806694181477310152}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6437789282822667553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834886410602800366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6926644, y: -0.23667423, z: 0.009765625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4806694181477310152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834886410602800366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dadd13ac47e2484ba82b11b2852d8c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rollButtonPrefab: {fileID: 4884897147482407089, guid: dfb341722e7b6ab4da9e44fad94d541c,
+    type: 3}
+  endTurnButtonPrefab: {fileID: 4769992444978713851, guid: 56ada3ff23f79f24cac9c18b02dfb7c1,
+    type: 3}
+  selectBoxPrefab: {fileID: 7081055266579380339, guid: 3b2931c6b1c12f443ae0cc99cd0d6512,
+    type: 3}
+  humanScorePrefab: {fileID: 8590964194916133471, guid: 589c05d06411ecc4081bfb36dda61e2f,
+    type: 3}
+  chickenScorePrefab: {fileID: 7920230337505923922, guid: aee1f8825c6c30b408a4a92a1d6dede0,
+    type: 3}
+  cowScorePrefab: {fileID: 6497169797114975304, guid: 27c2102a9dd30b045af37f5a91a2c865,
+    type: 3}
+  deathRayScorePrefab: {fileID: 3014154654023164692, guid: 00482d17358d0f7408cb0d3bf7f5d9f3,
+    type: 3}
+  tankScorePrefab: {fileID: 5876387083567328257, guid: fd606693aa54f294887971427e57c686,
+    type: 3}
+  playerNamePrefab: {fileID: 3347365050594123273, guid: 51fa31703eeb6434d9978f3b82fec440,
+    type: 3}
+  playerPointsPrefab: {fileID: 8208440733912541071, guid: c6d0c1644bf2ee243a232c1373fba923,
+    type: 3}
+  diceTextPrefab: {fileID: 7674615456397656320, guid: 097c4acca79bff44b869fc85481a4d29,
+    type: 3}
+  diceNumPrefab: {fileID: 2513124808689155069, guid: 0b5454c5461d97b4ebdaa9917c56ab1a,
+    type: 3}
