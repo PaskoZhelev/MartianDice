@@ -99,16 +99,18 @@ public class GameManager : MonoBehaviour
         currPlayer.increasePoints();
         if(currPlayer.points >= MAX_POINTS)
         {
-            endGame = true;           
+            aiManager.endGame = true;           
         }
 
-        if (currPlayer.name == BOT_NAME && endGame)
+        if (currPlayer.id == BOT_ID && aiManager.endGame)
         {
             endGameScoreMap[PLAYER_NAME] = playerManager.getInactivePlayer().points;
             endGameScoreMap[BOT_NAME] = currPlayer.points;
             SceneManager.LoadScene("EndGameScene");
-        }
-        NewRound();
+        } else
+        {
+            NewRound();
+        }      
     }
 
     private void updatePlayerNames()

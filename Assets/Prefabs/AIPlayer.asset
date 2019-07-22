@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49203c49801fa7a4faf7ad1dcbb5d56b, type: 3}
   m_Name: AIPlayer
   m_EditorClassIdentifier: 
-  name: 
+  name: Bob
   points: 0
   id: -1
   isAI: 1

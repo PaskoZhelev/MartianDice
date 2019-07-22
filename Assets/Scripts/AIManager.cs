@@ -13,11 +13,13 @@ public class AIManager : MonoBehaviour
     public Dictionary<int, int> diceTypesMap;
     private bool endTurn;
     public const int INVALID_VALUE = -1;
+    public bool endGame;
 
     public void Generate()
     {
         diceTypesMap = new Dictionary<int, int>();
         endTurn = true;
+        endGame = false;
         playerManager = GameManager.instance.playerManager;
         diceManager = GameManager.instance.diceManager;
         uiManager = GameManager.instance.uiManager;
@@ -104,7 +106,7 @@ public class AIManager : MonoBehaviour
     {
         int tankDifference = aiPlayer.currentTanks - aiPlayer.currentDeathRays;
         int availableDice = diceManager.availableDice;
-        if (availableDice <= 0 || tankDifference > availableDice || ((availableDice <= 2 && (tankDifference <= 0 && tankDifference >= -1))))
+        if (availableDice <= 0 || tankDifference > availableDice || ((availableDice <= 2 && tankDifference <= 0)))
         {
             return true;
         }
