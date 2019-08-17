@@ -47,7 +47,7 @@ public class AIManager : MonoBehaviour
     private void RollDice()
     {
         GameManager.instance.RollAllDice();
-        Invoke("SelectBestDice", 3);
+        Invoke("SelectBestDice", 2.5f);
     }
 
     private void SelectBestDice()
@@ -56,8 +56,8 @@ public class AIManager : MonoBehaviour
         int tankDifference = aiPlayer.currentTanks - aiPlayer.currentDeathRays;
         int availableDice = diceManager.availableDice;
 
-        // current tank difference should be larger than 2 to select death ray
-        if (tankDifference > 2 && hasDice(DEATH_RAY_VALUE_3))
+        // current tank difference should be larger than 0 to select death ray
+        if (tankDifference > 0 && hasDice(DEATH_RAY_VALUE_3))
         {
             diceManager.SelectDice(DEATH_RAY_VALUE_3);
         } else
@@ -106,7 +106,7 @@ public class AIManager : MonoBehaviour
     {
         int tankDifference = aiPlayer.currentTanks - aiPlayer.currentDeathRays;
         int availableDice = diceManager.availableDice;
-        if (availableDice <= 0 || tankDifference > availableDice || ((availableDice <= 2 && tankDifference <= 0)))
+        if (availableDice <= 0 || tankDifference > availableDice)
         {
             return true;
         }
