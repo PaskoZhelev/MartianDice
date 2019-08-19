@@ -10,7 +10,7 @@ public class SelectBox : MonoBehaviour
     private void Start()
     {
         renderer = GetComponent<SpriteRenderer>();
-        transform.SetParent(canvas.transform);
+        transform.SetParent(UIManager.canvas.transform);
     }
 
     private void OnTriggerEnter(Collider other)

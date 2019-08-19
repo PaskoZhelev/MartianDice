@@ -39,11 +39,12 @@ public class UIManager : MonoBehaviour
     private Text cowPoints;
     private Text deathRayPoints;
     private Text tankPoints;
-
+    public static Canvas canvas;
 
 
     public void GenerateNewGameUI()
-    {      
+    {
+        canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
         rollButton = Instantiate(rollButtonPrefab, new Vector2(ROLL_BTN_X_POS, ROLL_BTN_Y_POS), Quaternion.identity) as Button;
         rollButton.transform.SetParent(canvas.transform, false);
         endTurnButton = Instantiate(endTurnButtonPrefab, new Vector2(END_BTN_X_POS, END_BTN_Y_POS), Quaternion.identity) as Button;

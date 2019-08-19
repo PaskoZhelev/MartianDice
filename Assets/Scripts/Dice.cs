@@ -22,9 +22,10 @@ public class Dice : MonoBehaviour
 
     void Start()
     {
+        
         renderer = GetComponent<SpriteRenderer>();
         renderer.sprite = diceSides[0];
-        transform.SetParent(canvas.transform);
+        transform.SetParent(UIManager.canvas.transform);
         value = 0;
         locked = false;
         available = true;

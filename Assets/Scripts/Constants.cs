@@ -51,7 +51,7 @@ public static class Constants
     public const int INACTIVE_PLAYER_FONT_SIZE = 45;
     public const int MAX_POINTS = 25;
 
-    public static Canvas canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
+    //public static Canvas canvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
 
     public const string DICE_DEFAULT_SORTING_LAYER = "DiceDefaultLayer";
     public const string DICE_TOP_SORTING_LAYER = "DiceTopLayer";
